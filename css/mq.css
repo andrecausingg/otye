@@ -1,0 +1,124 @@
+
+/* Hamburger Menu */
+@media only screen and (max-width: 992px){
+    .hide-navigator-links{
+        display: none;
+    }
+
+    .loginItem2{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .hide-hamburger{
+        display: none;
+    }
+}
+
+/* Padding Mobile */
+@media only screen and (max-width: 575px){
+    .main, .footer, .uMain{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    /* U Dashboard Desktop */
+    .uDesktopHeaderNav{
+        display: none;
+    }
+}
+
+/* Containers */
+@media only screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    
+    /* Log in form witdh*/
+    .loginItem1{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+
+    .containerHeroItem2 img, .containerForumItem1 img{
+        height: auto;
+    }
+
+    /* Log in Img*/
+    .loginItem2 img{
+        height: 500px;
+    }
+                        /* U Dashboard */
+    .containerCourses, .uContainerCourses, .uContainerClass{
+        grid-template-columns: 50% 50%;
+        grid-column-gap:15px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+    .containerHero, .containerForum, .containerScheduleOftoturial, .containerLogin{
+        grid-template-columns: 50% 50%;
+        grid-column-gap:15px;
+    }
+    
+    .containerCourses, .footer{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-column-gap:15px;
+    }
+
+    .main{
+        margin-top: 150px;
+        padding: none;
+    }
+
+    /* u Dashboard Header */
+    .uHeader{
+        display: none;
+    }
+
+    .uContainerCourses, .uContainerClass{
+        grid-template-columns: 33.33% 33.333% 33.333%;
+        grid-column-gap:15px;
+    }
+
+    .uContainerClass, .uContainerCourses{
+        padding-left:80px;
+    }
+
+    .uDescriptionContent{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+
+    /* U dashboard */
+    .uContainerCourses, .uContainerClass{
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-column-gap:15px;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}

@@ -1,0 +1,715 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.active{
+    border-bottom: 3px solid rgb(20, 68, 132);
+    color: rgb(36, 124, 196);   
+}
+
+.navLinkHover a:hover{
+    transition: 300ms ease-in-out;
+    border-bottom: 3px solid rgb(20, 68, 132);
+    color: rgb(36, 124, 196);
+}
+
+.btnGetStarted{
+    background-image: linear-gradient(to right,rgb(36, 124, 196),rgb(20, 68, 132));
+    color: rgb(255, 255, 255); /* White */
+    width: 185px; /* 185px */
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.btnGetStarted:hover{
+    transition: all .1s ease-in-out;
+    background-image: linear-gradient(to left,rgb(36, 124, 196),rgb(20, 68, 132));
+}
+
+.btnGetStartedMobile:hover{
+    transition: all .1s ease-in-out;
+    background-image: linear-gradient(to left,rgb(36, 124, 196),rgb(20, 68, 132));
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.hamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+    background-color:rgb(36, 124, 196);
+    transition: all 300ms ease-in-out;
+    transform-origin: left center;
+}
+
+/* Animation for hamburger menu first child*/
+.open span:first-child {
+    transform: rotate(45deg);
+}
+/* Animation for hamburger menu second child*/
+.open span:nth-child(2){
+    opacity: 0;
+}
+/* Animation for hamburger menu third child*/
+.open span:last-child {
+    transform: rotate(-45deg);
+}
+
+.behind{
+    display: none;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 450px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navLinksMobileTab{
+    margin: 100px auto;
+}
+
+.navLinksMobileTab, .navLinksMobileTabItem{
+    display: block !important;
+    width:100%;
+}
+
+.navLinksMobileTabItem{
+    margin-top: 30px;
+}
+
+.btnGetStartedMobile{
+    background-image: linear-gradient(to right,rgb(36, 124, 196),rgb(20, 68, 132));
+    color: rgb(255, 255, 255); /* White */
+    width: 185px; /* 185px */
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+/* Main */
+
+.main{
+    z-index: -1;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* Section Hero */
+.containerHero{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.containerHeroItem1 h1{
+    margin: 0;
+}
+
+.containerHeroItem{
+    overflow: hidden;
+}
+
+.containerHeroItem2 img{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 197.73px;
+}
+
+/* Section Forum */
+.containerForum{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerForumItem1 img{    
+    width: 100%;
+    height: 247.5px;
+}
+
+.containerForumItem2{
+    padding: 20px;
+    background-color: rgb(20, 68, 132);
+    color: rgb(255, 255, 255); /* White */
+}
+
+.containerForumItem2 img{
+    width: 100%;
+    height: 122.75px;
+}
+
+/* Section Schedule Of Toturial */
+.containerScheduleOftoturial{
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerBgw{
+    background-color: rgb(255, 255, 255); /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerScheduleOftoturialItem1{
+    justify-content: center;
+    align-items: center;
+}
+
+.containerScheduleOftoturialItem1 img{
+    width: 100%;
+    height: 273.47px;
+}
+
+.containerScheduleOftoturialItem2{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(20, 68, 132);
+    color: rgb(255, 255, 255); /* White */
+}
+
+/* Courses */
+.containerCourses{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.coursesItem{
+    position: relative;
+    z-index: -1;
+}
+
+.coursesItem img{
+    width: 100%;
+    height: 239px;
+}
+
+.containerTitle{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255); /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerTitle h3{
+    margin: 0;
+}
+
+/* Donation */
+.containerDonation{
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.donationItem2{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.donationItem2 img{
+    width: 100%;
+    height: 273.47px;
+}
+
+.donationItem1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(20, 68, 132);
+    color: rgb(255, 255, 255); /* White */
+}
+
+
+.donationItem1 p{
+    margin: 0;
+}
+
+.containerDonationImgText{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerDonationImgText a{
+    color: rgb(255, 255, 255); /* White */
+}
+
+.containerBgwDonation{
+    background-color: rgb(255, 255, 255); /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+.footer{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    justify-content: center;
+}
+
+.footerItem h3{
+    margin: 0;
+}
+
+.footerItemContent p{
+    margin: 0;
+}
+
+.footerNavlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavlinks a{
+    margin-top: 10px;
+}
+
+.footerNavlinks a:hover{
+    transition: 300ms ease-in-out;
+    border-bottom: 3px solid rgb(20, 68, 132);
+    color: rgb(36, 124, 196);
+}
+
+.footerContainerImgNumber{
+    display: flex;
+    align-items: center;
+}
+
+/* Terms and Condition */
+.copyrightTermsAndCondition{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.copyrightTermsAndCondition a:hover{
+    transition: 300ms ease-in-out;
+    border-top: 3px solid rgb(20, 68, 132);
+    color: rgb(36, 124, 196);
+}
+
+/* Log in */
+
+/* Section Hero */
+.containerLogin{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.loginItem1{
+    color: rgb(255, 255, 255); /* White */
+    background-color: rgb(20, 68, 132);
+    margin: 0 auto;
+    width: 290px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginItem2 img{
+    width: 100%;
+    height: 197.73px;
+}
+
+.loginForm{
+    padding: 20px;
+}
+
+.inputText{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+}
+
+.submitContainer{
+    text-align: center;
+}
+
+.btnSubmit{
+    background-color: rgb(255, 255, 255); /* White */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    width: 150px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.btnSubmit:hover{
+    background-color: rgb(36, 124, 196);
+    color: rgb(255, 255, 255); /* White */
+    transition: 900ms ease-in-out;
+}
+
+.containerDont{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerDont a, .containerAgreement a{
+    color: rgb(255, 255, 255); /* White */
+    text-decoration: underline;
+}
+
+.errorContainer{
+    color: red;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255); /* White */
+    padding: 15px;
+    font-size: 14px;
+}
+
+.titleContainer h3{
+    text-align: center;
+}
+
+.containerAgreement{
+    font-size: 14px;
+}
+
+/* U Mobile Dashboard */
+.uHeader{
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+}
+
+.uFooter{
+    width: 100%;
+    background-color: rgb(20, 68, 132);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.uMobileIconName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uMobileIconName span{
+    cursor: pointer;
+    font-size: 12px;
+    color:rgb(255, 255, 255); /* White */
+    margin-bottom: 10px;
+}
+
+.uMobileIconNameFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uMobileIconNameFoot span{
+    cursor: pointer;
+    font-size: 12px;
+    color:rgb(255, 255, 255); /* White */
+}
+
+.uNavContainer{
+    width: 60px;
+    height: auto;
+    background-color: rgb(20, 68, 132);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 80px;
+    left: 10px;
+    border-radius: 25px;
+}
+
+.uNavIconsExtend{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    display: none;
+}
+
+.uNavIconsExtend img{
+    margin-bottom: 15px;
+}
+
+.uNavIconsExtend img:last-child{
+    margin-bottom: 0px;
+}
+
+.uSeperatorHamburgerAndUnavExtend{
+    display: none;
+}
+
+.uHamburger{
+    cursor: pointer;
+}
+
+.uHamburger span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+    background-color:rgb(255, 255, 255); /* White */
+    transition: all 300ms ease-in-out;
+    transform-origin: left center;
+}
+
+.uHamburger span:last-child{
+    margin-bottom: 0;
+}
+
+/* Animation for hamburger menu first child*/
+.uOpen span:first-child {
+    transform: rotate(45deg);
+}
+/* Animation for hamburger menu second child*/
+.uOpen span:nth-child(2){
+    opacity: 0;
+}
+/* Animation for hamburger menu third child*/
+.uOpen span:last-child {
+    transform: rotate(-45deg);
+}
+
+
+/*U Desktop Navigation Link */
+.uDesktopHeaderNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background-color: rgb(20, 68, 132);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.uDesktopNavigationIcons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uDesktopIconName{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.uDesktopIconName:hover{
+    transition: 300ms ease-in-out;
+    border-left: 3px solid rgb(255, 255, 255); /* White */
+}
+
+.uDesktopIconName span{
+    cursor: pointer;
+    font-size: 12px;
+    color:rgb(255, 255, 255); /* White */
+}
+
+/* U Dashboard Main */
+.uMain{
+    width: 100%;
+}
+
+.uMainDashboardTitle h2{
+    text-align: center;
+}
+
+.uContainerCourses{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:20px;
+    align-items: center;    
+    justify-content: center;
+}
+
+.uCoursesITem1{
+    position: relative;
+}
+
+.uCoursesITem1 img{
+    width: 100%;
+    height: 250px;
+}
+
+.uCoursesTitle{
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255); /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.uCoursesTitle h4{
+    margin: 0;
+}
+
+.uCoursesTitle span{
+    font-size: 12px;
+    font-weight: 500;
+    color: 	rgb(51, 204, 51); /* Green */
+}
+
+.uClassAvailable h5{
+    margin: 0;
+}
+
+.uEnterRoom{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(36, 124, 196);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    color: rgb(255, 255, 255); /* White */
+}
+
+.uEnterRoom:hover{
+    background-color:rgb(20, 68, 132);
+}
+
+.uEnterRoom img{
+    width: 24px;
+    height: 24px;
+}
+
+.uEnterRoom a{
+    text-decoration: underline;
+    color: rgb(255, 255, 255); /* White */
+}
+
+.uAtagEnterRoom img{
+    width: 24px;
+    height: 24px;
+}
+
+/* u Class */
+
+.uContainerClass{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:20px;
+    align-items: center;    
+    justify-content: center;
+}
+
+.uItemClass{
+    background-color: rgb(255, 255, 255); /* White */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+.uDescriptionContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.uSeperatorContent{
+    background-color:rgb(36, 124, 196);
+    height: 200px;
+    width: 10px;
+    border-radius: 25px;
+}
+
+.uDescriptionContentLeft, .uDescriptionContentRight{
+    display: flex;
+    flex-direction: column;
+}
+
+.uDescriptionContentLeft span, .uDescriptionContentRight span{
+    margin-bottom: 10px;
+}
+
+.uBtnContainer{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.uBtnJoinClass{
+    background-color:rgb(36, 124, 196);
+    color:rgb(255, 255, 255); /* White */
+    padding: 15px 30px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.uBtnJoinClass:hover{
+    background-color:rgb(20, 68, 132);
+}
